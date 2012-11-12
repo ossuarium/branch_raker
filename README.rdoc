@@ -1,0 +1,47 @@
+= Branch Raker
+
+<b>Use Branch Raker to maintain a build history for each branch. Originally created for LaTeX projects, but useful for anything that needs to be 'compiled'.</b>
+
+<em>Intelligently builds the latest commit on all of your Git branches.</em>
+
+== What is Branch Raker?
+
+Coming soon.
+
+== Installation
+
+Add this line to your application's Gemfile:
+
+  gem 'branch_raker'
+
+And then execute:
+
+  $ bundle
+
+Or install it yourself as:
+
+  $ gem install branch_raker
+
+== Using Branch Raker
+
+Coming soon.
+
+== Development
+
+=== Source Repository
+
+The {Branch Raker source}[https://github.com/razor-x/branch_raker] is currently hosted at github.
+To clone the project run
+
+  $ git clone git://github.com/razor-x/branch_raker.git
+
+== License
+
+Branch Raker is licensed under the MIT license.
+
+== Warranty
+
+This software is provided "as is" and without any express or
+implied warranties, including, without limitation, the implied
+warranties of merchantibility and fitness for a particular
+purpose.
