@@ -49,7 +49,7 @@ Other available rake tasks include:
 
 * <tt>built:current</tt> lists branches with up to date builds.
 * <tt>built:stale</tt> lists branches whose latest commit has not been built.
-* <tt>build:branch[branch]</tt> builds named branch if its latest commit has not been built. If no branch given, builds current head.
+* (not yet implemented) <tt>build:branch[branch]</tt> builds named branch if its latest commit has not been built. If no branch given, builds current head.
 
 == Development
 

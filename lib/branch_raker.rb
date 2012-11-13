@@ -132,12 +132,13 @@ module BranchRaker
       build_group @stale unless @stale.empty?
     end
 
-    task :branch, [:branch] => ['built:update'] do |t, args|
-      args.with_defaults :branch => nil
-      head = args[:branch].nil? ? Grit::Head.current(REPO) : REPO.get_head(args[:branch])
-      unless @current.map{ |c| c.id }.include?(head.commit.id)
-        build head.commit, head.name, "#{Time.now.to_i} (#{head.name})"
-      end
-    end
+      # FIXME
+#     task :branch, [:branch] => 'built:stale' do |t, args|
+#       args.with_defaults :branch => nil
+#       head = args[:branch].nil? ? Grit::Head.current(REPO) : REPO.get_head(args[:branch])
+#       unless @current.map{ |c| c.id }.include?(head.commit.id)
+#         build head.commit, head.name, "#{Time.now.to_i} (#{head.name})"
+#       end
+#     end
   end
 end
