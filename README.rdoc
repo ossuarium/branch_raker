@@ -6,7 +6,9 @@
 
 == What is Branch Raker?
 
-Coming soon.
+Branch Raker is implemented as a set of rake tasks.
+The default action will build the most recent unbuilt commit for each branch.
+Given access to a git repository, Branch Raker can be used to automatically maintain a build history for your project.
 
 == Installation
 
@@ -24,7 +26,30 @@ Or install it yourself as:
 
 == Using Branch Raker
 
-Coming soon.
+At the top of your Rakefile add
+
+  require 'branch_raker'
+  include BranchRaker
+
+then define your make method:
+
+  module BranchRaker
+    def make src_dir, out_dir
+      # code that builds your project's source located in src_dir and saves the build to out_dir
+    end
+  end
+
+Running
+
+  $ rake
+
+will execute the default task +build:all+.
+
+Other available rake tasks include:
+
+* <tt>built:current</tt> lists branches with up to date builds.
+* <tt>built:stale</tt> lists branches whose latest commit has not been built.
+* <tt>build:branch[branch]</tt> builds named branch if its latest commit has not been built. If no branch given, builds current head.
 
 == Development
 
