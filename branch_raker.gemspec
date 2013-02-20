@@ -21,4 +21,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'minitar'
   gem.add_dependency 'rake'
 
+  gem.add_development_dependency 'bump'
+
 end
