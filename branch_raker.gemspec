@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.platform      = Gem::Platform::RUBY
   gem.version       = BranchRaker::VERSION
 
-  gem.add_dependency 'grit'
+  gem.add_dependency 'gitlab-grit'
   gem.add_dependency 'minitar'
   gem.add_dependency 'rake'
 
